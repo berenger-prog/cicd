@@ -7,7 +7,8 @@ on:
         description: 'l input'
         required: false
         type: boolean
-
+  pull_request:
+    types: [opened, reopened]
 jobs:
   install:
     runs-on: ubuntu-latest
