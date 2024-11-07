@@ -1,12 +1,12 @@
 name: Manual install
 
 on:
-  workflow_dispatch:
-    inputs: 
-	runTests:
-       	   description: 'l input'
-           required: false
-      	   type: boolean
+	workflow_dispatch:
+		inputs: 
+			runTests:
+				description: 'l input'
+				required: false
+				type: boolean
 
 jobs:
   install:
