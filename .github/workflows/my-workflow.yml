@@ -1,32 +1,32 @@
 name: Manual install
 
 on:
-	workflow_dispatch:
-		inputs: 
-			runTests:
-				description: 'l input'
-				required: false
-				type: boolean
+  workflow_dispatch:
+    inputs: 
+      runTests:
+        description: 'l input'
+        required: false
+        type: boolean
 
 jobs:
   install:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: "16"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "16"
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: build 
-      run: npm run build
+      - name: build 
+        run: npm run build
 
-    - name: test 
-      run: npm test
+      - name: test 
+        run: npm tes
 
