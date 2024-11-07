@@ -3,10 +3,10 @@ name: Manual install
 on:
   workflow_dispatch:
     inputs: 
-	print_tags:
-        description: 'l input'
-        required: false
-        type: boolean
+	runTests:
+       	   description: 'l input'
+           required: false
+      	   type: boolean
 
 jobs:
   install:
