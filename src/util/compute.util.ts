@@ -8,7 +8,7 @@ export default class ComputeUtil {
   }
 
   static multiply(a: number, b: number): number {
-    return a * b;
+    return a * b; //torepj
   }
 
   static divide(a: number, b: number): number {
